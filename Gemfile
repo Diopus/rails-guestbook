@@ -19,6 +19,7 @@ gem 'sprockets-rails'
 gem 'stimulus-rails'
 gem 'turbo-rails'
 gem 'tzinfo-data', platforms: %i[mingw mswin x64_mingw jruby]
+gem 'pg'
 
 group :development, :test do
   gem 'debug', platforms: %i[mri mingw x64_mingw]
@@ -28,7 +29,6 @@ group :development, :test do
   gem 'rubocop-rails'
   gem 'slim_lint'
   gem 'solargraph'
-  gem 'sqlite3'
 end
 group :development do
   gem 'html2slim'
@@ -42,8 +42,4 @@ group :test do
   gem 'minitest-power_assert'
   gem 'selenium-webdriver'
   gem 'webdrivers'
-end
-
-group :production do
-  gem 'pg'
 end
